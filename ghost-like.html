@@ -1,0 +1,21 @@
+<head>
+  <title>ghost-like</title>
+</head>
+
+<body>
+	<header>
+		<h1>Ghost like markdown rendering.</h1>
+	</header>
+	<section>
+		<section class="markdown">{{> markdown}}</section>
+		<section class="rendered">{{> rendered}}</section>
+	</section>
+</body>
+
+<template name="markdown">
+	<textarea placeholder="Enter text"></textarea>
+</template>
+
+<template name="rendered">
+	{{#markdown}}{{markdownText}}{{/markdown}}
+</template>
