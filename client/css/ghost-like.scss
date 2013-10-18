@@ -1,8 +1,10 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 
+// Breakpoint setup
 $mobile: new-breakpoint(max-width 480px 4);
 
+// Styling
 body {
 	font-family: "helvetica Neue", "Helvetica", sans-serif;
 	line-height: 1.618em;
